@@ -1,6 +1,6 @@
 # Practical Experience Handbook
 
-> **实战经验手册** — 30 篇来自 AI / RAG / Agent / Pipeline 真实生产场景的实战教程合集。
+> **实战经验手册** — 36 篇来自 AI / RAG / Agent / Pipeline 真实生产场景的实战教程合集。
 >
 > **不是教科书，是踩坑日志 + 可复用代码 + 数字基线**。
 > 每篇教程都有完整的：背景 → 失败案例 → 修复依据 → 端到端验证 → 5 个踩坑 → Checklist。
@@ -19,7 +19,7 @@
 | **RAG 知识库** | 7 | 多跳 RAG、召回偏差修复、幻觉防御、KB 导入运营、增量更新、闭环实战 |
 | **Codex / Harness 工程实践** | 3 | Codex 三层模型、Harness 工程、Memory v2 hot rule |
 | **OCR / 代码评审** | 2 | 阿里 Token Plan + OCR、Mavis 接管 code review |
-| **桌面控制 Pipeline** | 2 | Laya 贪吃蛇思维 + computer_control_pipeline 多 backend + 几何过滤 |
+| **桌面控制 Pipeline** | 4 | Laya 贪吃蛇思维 + computer_control_pipeline 多 backend + 几何过滤 + 0 mcp Phase A + Laya Tetris 零样本 |
 | **AI 基础与学习路径** | 2 | AI 基础概念、AI 工程基础设施 |
 | **视频 / 语音自动化** | 2 | 视频转 md 教程、语音对话循环 + TTS 自动播放 |
 | **大模型架构与面试** | 3 | 分布式系统设计、推理优化、面试突围、幻觉治理 |
@@ -65,6 +65,8 @@
 
 - **[`16_Laya贪吃蛇思维控制电脑实战教程.md`](16_Laya贪吃蛇思维控制电脑实战教程.md)** — Laya + snake pipeline + PAI DSW 实例创建 0→1
 - **[`17_computer_control_pipeline多Backend+几何过滤实战教程.md`](17_computer_control_pipeline多Backend+几何过滤实战教程.md)** — 4 backend (laya/jev/agentjev/auto) + 几何过滤 + bilibili 真实跑通 BV1xwWn6FEiH
+- **[`19_os-snake-pipeline_0mcp_phaseA.md`](19_os-snake-pipeline_0mcp_phaseA.md)** — 0 mcp 纯 Python 桌面自动化 + 5 个回归点项目内固化
+- **[`20_Laya_multilingual_tetris_从讨论到完整跑通实战教程.md`](20_Laya_multilingual_tetris_从讨论到完整跑通实战教程.md)** — Laya multilingual 零样本玩俄罗斯方块 + 中文陈述 + noul 评分 + Canvas 可视化
 
 ### AI 基础与学习路径
 
@@ -151,12 +153,13 @@ python scripts/import_doc.py *.md --kb practical_handbook --embedder bge-m3
 
 - **作者**: Mavis Agent（AI 编排助手） + 玄针理梁（用户主导）
 - **建立日期**: 2026-09-24
-- **教程总数**: 30 篇
-- **总字数**: ~1.5 MB（17,189 行 commit）
+- **最近更新**: 2026-09-27(教程 20 — Laya multilingual Tetris)
+- **教程总数**: 36 篇
+- **总字数**: ~0.9 MB（19,568 行 commit）
 - **License**: 跟随用户偏好（默认 MIT）
 
 ---
 
 ## 七、一句话总结
 
-**30 篇实战教程合集 — 不是教科书，是踩坑日志 + 可复用代码 + 数字基线，每篇都从真实失败案例出发，给出修复依据 + 端到端验证 + 复现 checklist，覆盖 AI 工程基础设施 / RAG 知识库 / Agent 编排 / 桌面控制 Pipeline 4 个主题。**
+**36 篇实战教程合集 — 不是教科书，是踩坑日志 + 可复用代码 + 数字基线，每篇都从真实失败案例出发，给出修复依据 + 端到端验证 + 复现 checklist，覆盖 AI 工程基础设施 / RAG 知识库 / Agent 编排 / 桌面控制 Pipeline 4 个主题。**
